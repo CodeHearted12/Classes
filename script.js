@@ -87,7 +87,16 @@ class Sport extends Car {
 class Truck extends Factory {
   constructor(model, color, trim, engensize, hitch, bed, navigation, doors){
     super()
-    
+    this.model = model;
+    this.color = color;
+    this.enginesize = enginesize;
+    this.hitch = hitch;
+    this.bed = bed;
+    this.navigation = navigation;
+    this.trim = trim;
+    this.backupcamera = true;
+    this.audo = 'basic';
+    this.warranty = '150,000 miles / 6 years'
   }
 }
 
