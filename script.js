@@ -67,7 +67,13 @@ class Car extends Factory{
 // The constructor should have the following properties: model, trim, transmission, top, color, seatstrim, audio, wheelstrim. The values should be specified when creating an instance of Sport.
 // Sports cars should also have the following additional properties: moonroof (false), enginetype (gasoline), convertible (true), doors (2)
 // Write your code below:
-
+class Sport extends Car {
+  constructor (model, trim transmission, color, seatstrim, audio, wheelstrim, top) {
+    super(model, trim, transmission, color, seatstrim, audio, wheelstrim, 2, 'gasoline', false);
+    this.top = top;
+    this.convertible = true;
+  }
+}
 
 
 
@@ -78,8 +84,12 @@ class Car extends Factory{
 // Truck should also have the following properties, standard: backupcamera (true), audio (basic)
 // It should also inherit the warranty property so we can extend it to: 150,000 miles / 6 years.
 // Write your code below:
-
-
+class Truck extends Factory {
+  constructor(model, color, trim, engensize, hitch, bed, navigation, doors){
+    super()
+    
+  }
+}
 
 
 // LET'S BUILD SOME CARS AND TRUCKS!
